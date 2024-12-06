@@ -1,77 +1,97 @@
 # Data Science Package Environment
 
-## Deskripsi
-Repositori ini menyediakan konfigurasi dan lingkungan yang diperlukan untuk proyek **Data Science** dengan menggunakan **Conda** untuk mengelola paket dan dependensi. Lingkungan ini mencakup pustaka untuk analisis data, visualisasi, dan machine learning. Pengguna dapat mengunduh dan menginstal lingkungan ini menggunakan file `environment.yml` untuk memulai proyek dengan dependensi yang konsisten dan dapat direproduksi.
+## Description
 
-## Fitur
-- **Jupyter Lab** untuk eksplorasi data interaktif
-- **Pandas**, **NumPy**, **Matplotlib** untuk analisis dan visualisasi data
-- **Scikit-learn** untuk model machine learning dasar
-- **DuckDB** untuk analisis data berbasis SQL
-- **PyGWalker** untuk visualisasi data interaktif
+This repository provides the necessary configuration and environment for **Data Science** projects using **Conda** to manage packages and dependencies. The environment includes libraries for data analysis, visualization, and machine learning. Users can download and set up this environment using the `environment.yml` file for a consistent and reproducible project setup.
 
-## Prasyarat
-Pastikan **Miniconda** atau **Anaconda** telah terinstal pada sistem Anda.
+## Features
 
-## Instalasi
+- **Jupyter Lab** for interactive data exploration
+- **Pandas**, **NumPy**, **Matplotlib** for data analysis and visualization
+- **Scikit-learn** for basic machine learning models
+- **DuckDB** for SQL-based data analysis
+- **PyGWalker** for interactive data visualization
 
-1. **Clone repositori ini:**
+## Prerequisites
+
+Ensure that **Miniconda** or **Anaconda** is installed on your system.
+
+## Installation
+
+1. **Clone this repository:**
+
    ```bash
    git clone https://github.com/username/datascience-package-environment.git
    cd datascience-package-environment
    ```
 
-2. **Buat environment Conda dari file `environment.yml`:**
+2. **Create the Conda environment from the `environment.yml` file:**
+
    ```bash
    conda env create -f environment.yml
    ```
 
-3. **Aktifkan environment Conda:**
+3. **Activate the Conda environment:**
+
    ```bash
    conda activate datascience_package
    ```
 
-4. **Instal Jupyter Lab jika belum terinstal:**
+4. **Install Jupyter Lab if it's not already installed:**
+
    ```bash
    conda install -c conda-forge jupyterlab
    ```
 
-5. **Menjalankan Jupyter Lab:**
+5. **Run Jupyter Lab:**
+
    ```bash
    jupyter lab
    ```
 
-   Jika menggunakan Visual Studio Code, pastikan ekstensi Python dan Jupyter sudah terpasang, kemudian pilih kernel `datascience_package` untuk menjalankan notebook.
+   If you're using Visual Studio Code, make sure the Python and Jupyter extensions are installed, then select the `datascience_package` kernel to run the notebook.
 
-## Menjalankan Project
+## Running the Project
 
-Setelah environment aktif, Anda dapat membuka file `main.ipynb` untuk menjalankan beberapa langkah analisis data dan memverifikasi bahwa semua pustaka berfungsi dengan baik. Notebook ini berisi contoh penggunaan pustaka utama, termasuk visualisasi data dan pembuatan model machine learning sederhana.
+Once the environment is activated, you can open the `main.ipynb` file to perform data analysis and verify that all libraries are working correctly. This notebook includes examples using the main libraries, including data visualization and simple machine learning model creation.
 
 ## Troubleshooting
 
-Jika Anda mengalami masalah saat menjalankan environment atau Jupyter Lab, coba langkah berikut:
-- **Pastikan kernel yang tepat dipilih di Jupyter Lab atau VSCode** (kernel `datascience_package`).
-- **Jupyter Lab tidak berjalan?** Coba instal ulang dengan:
+If you encounter issues while running the environment or Jupyter Lab, try the following steps:
+
+- **Make sure the correct kernel is selected in Jupyter Lab or VSCode** (kernel `datascience_package`).
+
+- Jupyter Lab not starting?
+
+   Try reinstalling it with:
+
   ```bash
   conda install -c conda-forge jupyterlab
   ```
-- **Kesalahan saat mengaktifkan environment:** Jika mendapatkan pesan error seperti `CondaError: Run 'conda init' before 'conda activate'`, jalankan:
+
+- Error activating environment:
+
+   If you get an error like 
+
+  ```
+  CondaError: Run 'conda init' before 'conda activate'
+  ```
+
+  , run:
+
   ```bash
   conda init
   ```
 
-## Struktur Repositori
+## Repository Structure
 
 ```
 datascience-package-environment/
-├── environment.yml         # Konfigurasi environment Conda
-├── main.ipynb              # Notebook utama untuk analisis data
-└── README.md               # Dokumentasi proyek
+├── environment.yml         # Conda environment configuration
+├── main.ipynb              # Main notebook for data analysis
+└── README.md               # Project documentation
 ```
 
-## Kontribusi
+## License
 
-Jika Anda ingin berkontribusi pada proyek ini, silakan buka *issue* atau buat *pull request*. Kami menyambut baik kontribusi dari semua pihak.
-
-## Lisensi
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://chatgpt.com/c/LICENSE).
