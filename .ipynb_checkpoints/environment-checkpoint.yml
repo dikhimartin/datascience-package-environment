@@ -1,0 +1,19 @@
+name: datascience_package
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8  # your beloved programming language! :)
+  - pygwalker
+  - python-duckdb
+  - pip  # Python's package-management system
+  - pip:
+    - jupyterlab==3.4 
+    - matplotlib==3.5
+    - pandas==1.4
+    - scikit-learn==1.1  # machine learning library
+    - statsmodels==0.13  # for time series analysis
+    - pillow==9.2  # image manipulation library, (used by matplotlib.image.imread)
+    - numpy==1.23  # Powerful n-dimensional arrays and numerical computing tools
+    - widgetsnbextension==4.0  # interactive HTML widgets for Jupyter notebooks
+    - duckdb
